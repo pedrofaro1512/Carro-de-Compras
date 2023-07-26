@@ -1,18 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
 import { ReactComponent as CartEmpty } from "../../assets/img/cart-empty.svg";
-import { useState } from "react";
 import { ReactComponent as CartFull } from "../../assets/img/cart-full.svg";
 import { ReactComponent as Close } from "../../assets/img/close.svg";
 import { ReactComponent as Garbage } from "../../assets/img/garbage.svg";
 import { STORAGE_PRODUCTS_CART } from "../../utils/constants";
+import { removeArrayDuplicates } from "../../utils/arrayFunc";
 
 import "./Cart.scss";
 
 export default function Cart(props) {
-  const { productsCart, getProductsCart } = props;
+  const { productsCart, getProductsCart, products } = props;
   const [cartOpen, setCartOpen] = useState(false);
   const widthCartContent = cartOpen ? 400 : 0;
+  const [singleProductsCart, setSingleProductsCart] = useState([]);
+
+  useEffect(() => {
+    const allProductsId = removeArrayDuplicates(productsCart);
+    setSingleProductsCart(allProductsId);
+  }, [productsCart]);
 
   const openCart = () => {
     setCartOpen(true);
@@ -40,7 +46,9 @@ export default function Cart(props) {
       </Button>
       <div className="cart-content" style={{ width: widthCartContent }}>
         <CartContentHeader closeCart={closeCart} emptyCart={emptyCart} />
-        Todos los productos....
+        {singleProductsCart.map((idProductsCart, index) => (
+          <CartContentProducts key={index} products={products} />
+        ))}
       </div>
     </>
   );
@@ -62,4 +70,10 @@ function CartContentHeader(props) {
       </Button>
     </div>
   );
+}
+
+function CartContentProducts(props) {
+  const { products } = props;
+
+  return "Products....";
 }

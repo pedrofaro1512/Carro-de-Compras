@@ -1,10 +1,12 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import Loading from "../Loading/Loading";
+import Product from "../Product/Product";
 
 const Products = (props) => {
   const {
     products: { result, loading, error },
+    addProductCart,
   } = props;
 
   return (
@@ -14,9 +16,11 @@ const Products = (props) => {
           <Loading />
         ) : (
           result.map((product, index) => (
-            <div>
-              <p>{product.name}</p>
-            </div>
+            <Product
+              key={index}
+              product={product}
+              addProductCart={addProductCart}
+            />
           ))
         )}
       </Row>

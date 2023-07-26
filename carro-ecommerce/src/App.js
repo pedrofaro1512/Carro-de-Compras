@@ -1,15 +1,16 @@
 import React from "react";
 import TopMenu from "./components/TopMenu/TopMenu";
 import useFetch from "./hooks/useFetch";
+import Products from "./components/Products/Products";
 import { urlApiProducts } from "./utils/constants";
 
 function App() {
-  const result = useFetch(urlApiProducts);
+  const products = useFetch(urlApiProducts, null);
 
-  console.log(result);
   return (
     <div>
       <TopMenu />
+      <Products products={products} />
     </div>
   );
 }

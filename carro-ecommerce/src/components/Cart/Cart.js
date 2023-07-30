@@ -166,6 +166,7 @@ function RenderProduct(props) {
       <div className="cart-content__product-info">
         <div>
           <h3>{product.name.substr(0, 25)}</h3>
+          <p>{product.weight}g</p>
           <p>$ {product.price} / ud.</p>
         </div>
         <div>

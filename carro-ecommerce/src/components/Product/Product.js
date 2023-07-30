@@ -14,7 +14,8 @@ const Product = (props) => {
         <Card.Body>
           <Card.Title>{product.name}</Card.Title>
           <Card.Text>{product.extraInfo}</Card.Text>
-          <Card.Text>$ {product.price} / Unidad</Card.Text>
+          <Card.Text>Peso: {product.weight}g</Card.Text>
+          <Card.Text>$ {product.price}</Card.Text>
           <Button onClick={() => addProductCart(product.id, product.name)}>
             Añadir al carrito
           </Button>

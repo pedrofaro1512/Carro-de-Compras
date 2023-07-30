@@ -11,7 +11,7 @@ const useFetch = (url, options) => {
     const fetchData = async () => {
       try {
         const backendUrl = new URL("http://localhost:3001/api");
-        backendUrl.searchParams.append("https://api.jsonserve.com/ddZaSD", url);
+        backendUrl.searchParams.append("https://api.jsonserve.com/sH7Yur", url);
         const response = await axios.get(backendUrl + url, options);
         setResult(response.data);
         setLoading(false);

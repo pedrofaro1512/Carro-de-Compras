@@ -11,7 +11,7 @@ app.use(cors());
 // Ruta para redirigir las solicitudes a la API externa
 app.get("/api", async (req, res) => {
   try {
-    const response = await axios.get("https://api.jsonserve.com/ddZaSD");
+    const response = await axios.get("https://api.jsonserve.com/sH7Yur");
     res.json(response.data);
   } catch (error) {
     res.status(500).json({ error: "Error al obtener los datos" });

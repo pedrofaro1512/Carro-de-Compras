@@ -1,59 +1,123 @@
 [
     {
       "id": 1,
-      "name": "Helado sándwich de nata",
-      "image": "img/sandwich-nata.jpg",
-      "extraInfo": "Caja 6 ud. (600 ml",
-      "price": 1.2
+      "name": "Grato Geisha",
+      "image": "img/Grato-Geisha.jpg",
+      "extraInfo": "Café Grato Geisha es un café especial de una de las variedades de mejor calidad del mundo, y que tiene, además, una historia cautivadora.",
+      "weight":250,
+      "price": 60900
     },
     {
       "id": 2,
-      "name": "Helado cucurucho de vainilla",
-      "image": "img/cucuruchos-vainilla.jpg",
-      "extraInfo": "Caja 6 ud. (720 ml",
-      "price": 1.55
+      "name": "San Alberto Premium",
+      "image": "img/San-Alberto.jpg",
+      "extraInfo": "Café especial Colombiano 100% cultivado en la hacienda colombiana San Alberto, y procesado bajo el proceso insignia de la Quíntuple Selección.",
+      "weight":340,
+      "price": 60480
     },
     {
       "id": 3,
-      "name": "Mini surtido",
-      "image": "img/mini-surtido.jpg",
-      "extraInfo": "Caja 6 ud. (720 ml)",
-      "price": 1.55
+      "name": "San Alberto Corazón Geisha",
+      "image": "img/cafe-especial-San-Alberto.jpg",
+      "extraInfo": "Café especial excepcional premium de Colombia. Un tipo blend en el que predomina la variedad Gesha con un 90%, que se complementa en su 10% restante con Caturra y Castillo",
+      "weight":240,
+      "price": 74900
     },
     {
       "id": 4,
-      "name": "Helado mini doble sándwich nata",
-      "image": "img/sandwich-doble.jpg",
-      "extraInfo": "Caja 6 ud. (480 ml)",
-      "price": 1.99
+      "name": "Gota negra ",
+      "image": "img/Gota-Negra.jpg",
+      "extraInfo": "Café Gota Negra es un café especial que te sorprenderá con la profundidad de sus sabores",
+      "weight":340,
+      "price": 49455
     },
     {
       "id": 5,
-      "name": "Helado de fresa",
-      "image": "img/fresa-hielo.jpg",
-      "extraInfo": "Caja 10 ud. (750 ml)",
-      "price": 1.65
+      "name": "Inefable",
+      "image": "img/Inefable.jpg",
+      "extraInfo": "Café Inefable es un café especial colombiano que nace en tres diferentes municipios  Nariño, Tolima y Quindío.",
+      "weight":340,
+      "price": 50400
     },
     {
       "id": 6,
-      "name": "Helado yogoice Mr. Toddy",
-      "image": "img/yogoice.jpg",
-      "extraInfo": "Caja 8 ud. (450 ml)",
-      "price": 1.7
+      "name": "Q coffee Gran reserva",
+      "image": "img/Q-Cafe.jpg",
+      "extraInfo": "Café especiale insignia Colombiano, sus atributos destacan por sus balances sensoriales logrados mediante el proceso de selección hecho grano a grano y es sometido a un riguroso examen por parte de un panel de 5 Q Graders.",
+      "weight":340,
+      "price": 70770
     },
     {
       "id": 7,
-      "name": "Helado sabor huevo de chocolate",
-      "image": "img/huevo.jpg",
-      "extraInfo": "Tarrina 1 L.",
-      "price": 2.55
+      "name": "Q Coffee Gran Reserva Luxury ",
+      "image": "img/Q-Coffee-Luxury.jpg",
+      "extraInfo": "Café Q.coffee Gran Reserva Luxury edition es un café especiales insignia Colombiano",
+      "weight":340,
+      "price": 93975
     },
     {
       "id": 8,
-      "name": "Medios cocos helados",
-      "image": "img/medio-coco-helado.jpg",
-      "extraInfo": "Caja 2 ud. (350 ml)",
-      "price": 2.05
+      "name": "Almendra Selecta Amagá",
+      "image": "img/Almendra-Selecta-Amaga.jpg",
+      "extraInfo": "Café especial Colombiano de altura, de variedad Arábica Caturra. Esta particular combinación le ha generado como atributo unas notas exóticas y únicas.",
+      "weight":500,
+      "price": 57540
+    },
+    {
+      "id": 9,
+      "name": "Madre Selva Finca La Colombia",
+      "image": "img/Madre-Selva.jpg",
+      "extraInfo": "Café Madre Selva Finca La Colombia es un café especial que se cultiva en montañas con vistas maravillosas.",
+      "weight":250,
+      "price": 40320
+    },
+    {
+      "id": 10,
+      "name": "Madre Selva Finca La Gabriela",
+      "image": "img/Madre-Selva-Gabiela.jpg",
+      "extraInfo": "Café Madre Selva Finca La Gabriela es un café especial que se cultiva en la finca más antigua de esta familia de cafés.",
+      "weight":250,
+      "price": 40320
+    },
+    {
+      "id": 11,
+      "name": "Madre Selva Finca la Reserva",
+      "image": "img/Especial-Madre-Selva-Reserva.jpg",
+      "extraInfo": "Café Madre Selva Finca La Reserva es un café especial que se cultiva en entornos naturales protegidos.",
+      "weight":250,
+      "price": 40320
+    },
+    {
+      "id": 12,
+      "name": "Los Frailes",
+      "image": "img/Los-Frailes.jpg",
+      "extraInfo": "Café especial, fruto de una familia de tradición cafetera que haciendo uso de buenas prácticas agrícolas ha logrado obtener un balance entre acidez, dulzura, cuerpo y sabor.",
+      "weight":500,
+      "price": 49455
+    },
+    {
+      "id": 13,
+      "name": "Macizo Bourbon Rosado ",
+      "image": "img/Macizo.jpg",
+      "extraInfo": "Café Macizo Bourbon Rosado es un café especial que enaltece la calidad de la producción colombiana.",
+      "weight":340,
+      "price": 66255
+    },
+    {
+      "id": 14,
+      "name": "Macizo Cundinamarca Blend",
+      "image": "img/Macizo-Cundinamarca.jpg",
+      "extraInfo": "Café Macizo Cundinamarca Blend es un café especial que reúne el fruto de los cafetales más especiales del departamento.",
+      "weight":340,
+      "price": 58065
+    },
+    {
+      "id": 15,
+      "name": "Colombian Exotic Bourbon Rosado",
+      "image": "img/Exotic.jpg",
+      "extraInfo": "Café Colombia Exotic es un café especial inspirado en la diversidad de Colombia: sus paisajes, personas y naturaleza.",
+      "weight":250,
+      "price": 54075
     }
   ]
   

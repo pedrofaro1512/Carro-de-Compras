@@ -9,6 +9,19 @@ import { ToastContainer, toast } from "react-toastify";
 function App() {
   const products = useFetch(urlApiProducts, null);
   const [productsCart, setProductsCart] = useState([]);
+  const [isTopMenuSticky, setIsTopMenuSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setIsTopMenuSticky(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     getProductsCart();
@@ -38,6 +51,7 @@ function App() {
   return (
     <div>
       <TopMenu
+        className={isTopMenuSticky ? "sticky" : ""}
         productsCart={productsCart}
         getProductsCart={getProductsCart}
         products={products}

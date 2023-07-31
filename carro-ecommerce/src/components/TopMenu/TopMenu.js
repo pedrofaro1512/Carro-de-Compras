@@ -1,14 +1,14 @@
 import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import Cart from "../Cart/Cart";
-import { ReactComponent as Logo } from "../../assets/img/Helado.svg";
+import { ReactComponent as Logo } from "../../assets/img/Cafe.svg";
 
 import "./TopMenu.scss";
 
 export default function TopMenu(props) {
-  const { productsCart, getProductsCart, products } = props;
+  const { productsCart, getProductsCart, products, className } = props;
   return (
-    <Navbar bg="dark" variant="dark" className="top-menu">
+    <Navbar bg="dark" variant="dark" className={`top-menu ${className}`}>
       <Container>
         <BrandNav />
         <MenuNav />
@@ -26,7 +26,7 @@ function BrandNav() {
   return (
     <Navbar.Brand>
       <Logo />
-      <h2>Tienda de helados</h2>
+      <h2>Tienda de cafés</h2>
     </Navbar.Brand>
   );
 }
@@ -34,9 +34,9 @@ function BrandNav() {
 function MenuNav() {
   return (
     <Nav className="mr-auto">
-      <Nav.Link href="#">Aperitivos</Nav.Link>
-      <Nav.Link href="#">Productos</Nav.Link>
-      <Nav.Link href="#">Mascotas</Nav.Link>
+      <Nav.Link href="#">Dulces</Nav.Link>
+      <Nav.Link href="#">Métodos</Nav.Link>
+      <Nav.Link href="#">Preparación</Nav.Link>
     </Nav>
   );
 }
